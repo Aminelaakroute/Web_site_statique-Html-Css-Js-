@@ -1,0 +1,905 @@
+@import url('https://fonts.cdnfonts.com/css/qatar2022');
+body{
+    background-color: #f2f2f2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* vole 1 css */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height:80px;
+    height: 80px;
+    background-color:rgb(85, 0, 101) ;
+}
+.logo{
+    width: 210px;
+}
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav li a{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:#f2f2f2;
+    padding: .5em 1em .5em 1em;
+}
+nav li a:hover{
+    background-color: rgb(98, 3, 117);
+    transition: .3ms;
+    border-radius: 15px;
+
+}
+.sign a{
+    margin-right: 2em;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+    padding: .2em 1em .2em 1em;
+}
+.sign a:hover {
+    background-color:#f2f2f2 ;
+    color:rgb(85, 0, 101);
+    transition: .5s;
+}
+/* vole 2 css */
+.vol1{
+    width: 250px;
+    height: 508px;
+    margin: 20px 0px 0px 15px;
+   
+}
+.groups{
+     width: 250px;
+    height: 508px;
+    margin: 20px 0px 0px 10px;
+    border: rgb(85, 0, 101) solid 1px;
+    border-radius: 6px;
+    background-image: url(/images/back-grp.svg);
+    background-size: cover;
+    
+
+}
+.selector{
+    width: 200px;
+    color:#f2f2f2;
+    font-family: 'qatar2022',sans-serif;
+    font-size: 14px;
+    padding: 2em 0em 0em 3em;
+}
+#selected{
+    margin-left: 25px;
+}
+#select{
+ width: 100%;
+ padding: .5em .5em .5em .5em;
+ margin-bottom: 5px;
+ box-sizing: border-box;
+ border-radius: 6px;
+ border: #f2f2f2 solid 1px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ background-color: rgb(85, 0, 101);
+}
+#select:hover{
+    background-color: #f2f2f2;
+    color: rgb(85, 0, 101);
+    border: rgb(85, 0, 101) solid 1px;
+
+}
+#select img{
+width: 30px;
+}
+#grp{
+    width: 100%;
+    overflow: hidden;
+    border: #f2f2f2 solid 1px;
+    border-radius: 6px;
+    color: #f2f2f2;
+    padding-left:0px ;
+    position: relative;
+    cursor: pointer;
+   
+}
+#grp button {
+    color: #f2f2f2;
+    font-size: 14px;
+    font-family: 'qatar2022', sans-serif;
+    background-color: rgb(85, 0, 101);
+     width: 170px;
+     margin-left: -8px;
+     padding: 10px 10px 10px 10px;
+     border: none;
+     cursor: pointer;;
+     border: #f2f2f2 solid 1px;
+
+}
+#grp .opt :hover{
+    color: rgb(85, 0, 101);
+    transition: .5ms;
+    background-color: #f2f2f2;
+
+}
+
+.hide{
+    visibility: hidden;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.group1 img{
+    width: 40px;
+    margin-top: 10px;
+}
+.im{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group1{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+   
+    padding: 20px;
+    width: 180px;
+    margin-left: -10px;
+    display: none;
+    
+}
+.group1 button{
+     font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+.group2{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group2 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group2 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+.group3{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+ 
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group3 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group3 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+.group4{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+  
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group4 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group4 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+.group5{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+  
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group5 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group5 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.group6{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+  
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group6 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group6 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+.group7{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+  
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group7 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group7 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+.group8{
+    margin-top: -280px;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
+  
+    padding :20px;
+    display: none;
+    width: 180px;
+    margin-left: -10px;
+}
+.group8 button{
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.group8 .im {
+    width: 40px;
+    margin-top: 10px;
+}
+/* vole 3 css */
+.contaner{
+    width: 800px;
+    position: absolute;
+}
+.box{
+    width: 800px;
+    margin-top: -508px;
+    margin-left: 300px;
+}
+.box img{
+    width: 150px;
+}
+#mor {
+    display: none;
+    margin-left: 42px;
+}
+#bel{
+    display: none;
+    margin-left: 42px;
+}
+#nether{
+    display: none;
+    margin-left: 42px;
+}
+#sene{
+    display: none;
+    margin-left: 42px;
+}
+/* vole 4 css */
+#tab1{
+    width: 700px;
+    height: 300px;
+    margin-top: -300px;
+    margin-left: 290px;
+    border: rgb(85, 0, 101) solid 1px;
+    position: absolute;
+    display: none;
+}
+#tab1  td {
+    border: rgb(85, 0, 101) solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+#tab1  td button{
+    background-color: rgb(85, 0, 101);
+    color: #f2f2f2;
+    border-radius: 6px;
+    display: flex;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+#tab1 th{
+    border: rgb(85, 0, 101) solid 1px;
+}
+
+#add1{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 390px;
+    display: none;
+}
+#add1 button{
+    color: rgb(85, 0, 101);
+    border: rgb(85, 0, 101) solid 1px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+#add1 input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: rgb(85, 0, 101) solid 1px;
+}
+#add1 p{
+    font-size: 18px;
+    color: rgb(85, 0, 101);
+    text-align: left;
+}
+
+/* belgium table css */
+#tab2{
+    width: 700px;
+    height: 300px;
+    margin-top: -300px;
+    margin-left: 290px;
+    border: rgb(85, 0, 101) solid 1px;
+    position: absolute;
+    display: none;
+}
+#tab2  td {
+    border: rgb(85, 0, 101) solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+#tab2 td button{
+    background-color: rgb(85, 0, 101);
+    color: #f2f2f2;
+    border-radius: 6px;
+    display: flex;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+#tab2 th{
+    border: rgb(85, 0, 101) solid 1px;
+}
+
+#add2{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 390px;
+    display: none;
+}
+#add2 button{
+    color: rgb(85, 0, 101);
+    border: rgb(85, 0, 101) solid 1px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+#add2 input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: rgb(85, 0, 101) solid 1px;
+}
+#add2 p{
+    font-size: 18px;
+    color: rgb(85, 0, 101);
+    text-align: left;
+}
+/* netherland table */
+#tab3{
+    width: 700px;
+    height: 300px;
+    margin-top: -300px;
+    margin-left: 290px;
+    border: rgb(85, 0, 101) solid 1px;
+    position: absolute;
+    display: none;
+}
+#tab3  td {
+    border: rgb(85, 0, 101) solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+#tab3 td button{
+    background-color: rgb(85, 0, 101);
+    color: #f2f2f2;
+    border-radius: 6px;
+    display: flex;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+#tab3 th{
+    border: rgb(85, 0, 101) solid 1px;
+}
+
+#add3{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 390px;
+    display: none;
+}
+#add3 button{
+    color: rgb(85, 0, 101);
+    border: rgb(85, 0, 101) solid 1px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+#add3 input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: rgb(85, 0, 101) solid 1px;
+}
+#add3 p{
+    font-size: 18px;
+    color: rgb(85, 0, 101);
+    text-align: left;
+}
+
+
+
+
+
+
+/* vole 5 css */
+
+  .vol5{
+    width: 280px;
+    height: 509px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -509px;
+    background-color: rgb(85, 0,101);
+    border-radius: 9px;
+    position: relative;
+    
+}
+
+
+.vol5 h1{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 30px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 9px;
+
+}
+.vol5 img{
+    width: 270px;
+    border: rgb(85, 0,101) solid 1px;
+    border-radius: 10px;
+}
+#mar-news{
+    width: 280px;
+    margin-left: px;
+    font-size: 18px;
+    margin: 10px 0 0 3px;
+    position: absolute;
+}
+#mar-news p{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 10px;
+}
+#mar-news h3{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 5px;
+}
+#mar-news button{
+    font-size: 18px;
+    background-color:none;
+    color: rgb(85, 0,101);
+    border: #f2f2f2 solid 1px ;
+    border-radius: 9px;
+    margin-top: 5px;
+    padding: 2px 3px 2px 3px;
+    
+}
+.but {
+    margin-top: 400px;
+    margin-left: 106px;
+}
+.but button {
+    background-color: none;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(85, 0,101);
+    border:#f2f2f2 solid 1px;
+    border-radius: 6px;
+}
+#qat-news{
+    width: 280px;
+    margin-left: px;
+    font-size: 18px;
+    margin: 10px 0 0 3px;
+    height: 380px;
+    position: absolute;
+    display: none;
+
+}
+#qat-news p{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 10px;
+}
+#qat-news h3{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 5px;
+}
+#qat-news button{
+    font-size: 18px;
+    background-color:none;
+    color: rgb(85, 0,101);
+    border: #f2f2f2 solid 1px ;
+    border-radius: 9px;
+    margin-top: 5px;
+    padding: 2px 3px 2px 3px;
+}
+#spa-news{
+    width: 280px;
+    margin-left: px;
+    font-size: 18px;
+    margin: 10px 0 0 3px;
+    height: 380px;
+    position: absolute;
+    display: none;
+
+}
+#spa-news p{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 10px;
+}
+#spa-news h3{
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 5px;
+}
+#spa-news button{
+    font-size: 18px;
+    background-color:none;
+    color: rgb(85, 0,101);
+    border: #f2f2f2 solid 1px ;
+    border-radius: 9px;
+    margin-top: 5px;
+    padding: 2px 3px 2px 3px;
+}
+#spa-news img{
+    width:270px ;
+    height: 180px;
+}
+.big-mar-news{
+    width: 1010px;
+    height: 509px;
+    margin-top: -500px;
+    position: absolute;
+}
+.big-mar-news img{
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+.big-mar-news h1 {
+    text-align: center;
+    position: absolute;
+   margin-top: 60px;
+    margin-left: 400px;
+    color:rgb(85, 0,101);
+}
+.big-mar-news p{
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.big-mar-news h1{
+    font-family: 'qatar2022';
+}
+#mar{
+    display: none;
+}
+
+.big-qat-news{
+    width: 1010px;
+    height: 509px;
+    margin-top: -500px;
+    position: absolute;
+    margin-left: 20px;
+}
+.big-qat-news img{
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+.big-qat-news h1 {
+    text-align: center;
+    position: absolute;
+   margin-top: 60px;
+    margin-left: 400px;
+    color:rgb(85, 0,101);
+}
+.big-qat-news p{
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.big-qat-news h1{
+    font-family: 'qatar2022';
+}
+#qat{
+    display: none;
+}
+.big-spa-news{
+    width: 1010px;
+    height: 509px;
+    margin-top: -500px;
+    position: absolute;
+    margin-left: 20px;
+}
+.big-spa-news img{
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+.big-spa-news h1 {
+    text-align: center;
+    position: absolute;
+   margin-top: 60px;
+    margin-left: 400px;
+    color:rgb(85, 0,101);
+}
+.big-spa-news p{
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.big-spa-news h1{
+    font-family: 'qatar2022';
+}
+#spa{
+    display: none;
+}
+
+
+/* vole 6 footer css */
+.footer {
+    background-color: rgb(85, 0, 101);
+    color: #f2f2f2;
+    height: 220px;
+    position: absolute;
+   margin-top: 40px;
+   width: 100%;
+}
+.footer .footer-content {
+    height: 200px;
+    display: flex;
+}
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 1px;
+    border: 1px solid #f2f2f2;
+}
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: #f2f2f2;
+    text-align: center;
+    font-family: 'qatar2022', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.footer .footer-content .about .contact span {
+
+    font-size: 14px;
+    margin-left: 20px;
+}
+.footer .footer-content .about .icons{
+    width: 50px;
+
+}
+.icons{
+    display: flex;
+}
+
+.footer .footer-content .about p {
+    line-height: 1.6;
+    text-align: center;
+}
+.footer .footer-content .about .contact .icon {
+    margin: .1em;
+    
+}
+.footer .footer-content .about .socials a {
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    width: 40px;
+    height: 30px;
+    padding-top: 12px;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1em;
+}
+.footer .footer-content .links ul a {
+    display: block;
+    margin-top: 0px;
+    font-size: 14px;
+    color: #f2f2f2;
+    transition: all .3s;
+    text-decoration: dotted;
+    padding: 2px;
+    text-align: center;
+
+}
+.footer .footer-content .links ul{
+    display: block;
+    justify-content: space-between;
+}
+.footer .footer-bottom {
+    background-color:rgb(85, 0, 101) ;
+    color: #f2f2f2;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    border: #f2f2f2 solid 1px;
+}
+
+.contact-input {
+    width: 80%;
+    height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin: 0.5em;
+}
+.msg-input {
+    width: 80%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: -8px 0 0 30px;
+    box-sizing: border-box;
+    border: 2px solid #f2f2f2;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin: 0.5em;
+}
+.btn-sub {
+    font-family: 'qatar2022', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
+    padding: 0.25em 0.25em 0.25em 0.25em;
+    border-radius: 6px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: -90px;
+    margin-left: 200px;
+    background-color: rgb(85, 0, 101);
+}
+.btn-sub:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .btn-sub {
+        padding: 0.25em 0.75em;
+    }
+}

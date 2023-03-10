@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/2022_FIFA_World_Cup.svg.webp">
+    <link href="https://fonts.cdnfonts.com/css/qatar2022" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href=""><img src="/images/logo.svg" alt=""></a></div>
+            <ul class="links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Groupes</a></li>
+                <li><a href="#">Classment</a></li>
+                <li><a href="#">matches</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Actualités</a></li>
+            </ul>
+    
+            <ul class="sign">
+                <li><a href="">Sign up</a></li>
+            </ul>
+    </nav>
+    <section class="body">
+        <div class="vol1">
+            <div class="groups" id="groups">
+                <div class="selector">
+                    <div id="select">
+                        <p id="selected">Groups</p>
+                        <img src="/images/arrow.svg" id="arrow">
+                    </div>
+                    <ul id="grp" class="hide">
+                        <li class="opt"><button onclick="hide1()">Group A</button></li>
+                        <li class="opt"><button onclick="hide2()">Group B</button></li>
+                        <li class="opt"><button onclick="hide3()">Group C</button></li>
+                        <li class="opt"><button onclick="hide4()">Group D</button></li>
+                        <li class="opt"><button onclick="hide5()">Group E</button></li>
+                        <li class="opt"><button onclick="hide6()">Group F</button></li>
+                        <li class="opt"><button onclick="hide7()">Group G</button></li>
+                        <li class="opt"><button onclick="hide8()">Group H</button></li>
+                    </ul>
+                    <div class="group1">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/mor.svg" alt="">
+                                <button onclick="show1()">Morocco</button></li>
+                            <li class="im">
+                                <img src="/images/flags/bel.svg" alt="">
+                                <button onclick="show2()">Belgium</button></li>
+                            <li class="im">
+                                <img src="/images/flags/croa.svg" alt="">
+                                <button>Croatia</button></li>
+                            <li class="im">
+                                <img src="/images/flags/cana.svg" alt="">
+                                <button>Canada</button></li>
+                        </ul>
+                    </div>
+                    <div class="group2">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/nether.svg" alt="">
+                                <button onclick="show3()">Netherlands</button></li>
+                            <li class="im">
+                                <img src="/images/flags/sene.svg" alt="">
+                                <button onclick="show4() ">Senegal</button></li>
+                            <li class="im">
+                                <img src="/images/flags/qatar.svg" alt="">
+                                <button>Qatar</button></li>
+                            <li class="im">
+                                <img src="/images/flags/equa.svg" alt="">
+                                <button>Ecuador</button></li>
+                        </ul>
+                    </div>
+                    <div class="group3">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/eng.svg" alt="">
+                                <button>England</button></li>
+                            <li class="im">
+                                <img src="/images/flags/usa.svg" alt="">
+                                <button>Usa</button></li>
+                            <li class="im">
+                                <img src="/images/flags/wales.svg" alt="">
+                                <button>Wales</button></li>
+                            <li class="im">
+                                <img src="/images/flags/iran.svg" alt="">
+                                <button>Iran</button></li>
+                        </ul>
+                    </div>
+                    <div class="group4">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/arg.svg" alt="">
+                                <button>Argentina</button></li>
+                            <li class="im">
+                                <img src="/images/flags/mexic.svg" alt="">
+                                <button>Mexic</button></li>
+                            <li class="im">
+                                <img src="/images/flags/saudi.svg" alt="">
+                                <button>Saudi Arabia</button></li>
+                            <li class="im">
+                                <img src="/images/flags/pola.svg" alt="">
+                                <button>Poland</button></li>
+                        </ul>
+                    </div>
+                    <div class="group5">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/fra.svg" alt="">
+                                <button>France</button></li>
+                            <li class="im">
+                                <img src="/images/flags/den.svg" alt="">
+                                <button>Denmark</button></li>
+                            <li class="im">
+                                <img src="/images/flags/aus.svg" alt="">
+                                <button>Australia</button></li>
+                            <li class="im">
+                                <img src="/images/flags/tun.svg" alt="">
+                                <button>Tunisia</button></li>
+                        </ul>
+                    </div>
+                    <div class="group6">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/spa.svg" alt="">
+                                <button>Spain</button></li>
+                            <li class="im">
+                                <img src="/images/flags/ger.svg" alt="">
+                                <button>Germany</button></li>
+                            <li class="im">
+                                <img src="/images/flags/jap.svg" alt="">
+                                <button>Japan</button></li>
+                            <li class="im">
+                                <img src="/images/flags/costa rica.svg" alt="">
+                                <button>Costa Rica</button></li>
+                        </ul>
+                    </div>
+                    <div class="group7">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/bra.svg" alt="">
+                                <button>Brazil</button></li>
+                            <li class="im">
+                                <img src="/images/flags/cam.svg" alt="">
+                                <button>Cameroon</button></li>
+                            <li class="im">
+                                <img src="/images/flags/serbia.svg" alt="">
+                                <button>Serbia</button></li>
+                            <li class="im">
+                                <img src="/images/flags/swiz.svg" alt="">
+                                <button>Switzerland</button></li>
+                        </ul>
+                    </div>
+                    <div class="group8">
+                        <ul>
+                            <li class="im">
+                                <img src="/images/flags/por.svg" alt="">
+                                <button>Portugal</button></li>
+                            <li class="im">
+                                <img src="/images/flags/aur.svg" alt="">
+                                <button>Uruguay</button></li>
+                            <li class="im">
+                                <img src="/images/flags/ghana.svg" alt="">
+                                <button>Ghana</button></li>
+                            <li class="im">
+                                <img src="/images/flags/kor.svg" alt="">
+                                <button>South Korea</button></li>
+                        </ul>
+                    </div>
+                    
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="contaner">
+            <div class="box" id="vol3">
+                <div id="mor">
+                    <a href="#" class="hakimi" onclick="showtable() "><img src="/images/players/hakimi1.svg" alt=""></a>
+                    <a href="#" class="zey" onclick="showtable() "><img src="/images/players/zeyech.svg" alt=""></a>
+                    <a href="#" class="bono" onclick="showtable() "><img src="/images/players/bono.svg" alt=""></a>
+                    <a href="#" class="bono" onclick="showtable() "><img src="/images/players/sais.svg" alt=""></a>
+                </div>
+                <div id="bel">
+                    <a href="#" class="de" onclick="showtable1()"><img src="/images/players/de bruyn.svg" alt=""></a>
+                    <a href="#" class="luk" onclick="showtable1()"><img src="/images/players/lukaku.svg" alt=""></a>
+                    <a href="#" class="cour" onclick="showtable1()"><img src="/images/players/courtois.svg" alt=""></a>
+                    <a href="#" class="haz" onclick="showtable1()"><img src="/images/players/hazard.svg" alt=""></a>
+                </div>
+                <div id="nether">
+                    <a href="#" class="dej" onclick="showtable2()"><img src="/images/players/dejong.svg" alt=""></a>
+                    <a href="#" class="dpay" onclick="showtable2()"><img src="/images/players/depay.svg" alt=""></a>
+                    <a href="#" class="van" onclick="showtable2()"><img src="/images/players/van dijk.svg" alt=""></a>
+                    <a href="#" class="ligt" onclick="showtable2()"><img src="/images/players/De ligt.svg" alt=""></a>
+                </div>
+                <div id="sene">
+                    <a href="#" class="mane"><img src="/images/players/mane.svg" alt=""></a>
+                    <a href="#" class="sar"><img src="/images/players/sar.svg" alt=""></a>
+                    <a href="#" class="mendy"><img src="/images/players/mendy.svg" alt=""></a>
+                    <a href="#" class="koli"><img src="/images/players/koli.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <section>
+           <div class="vol4">
+            
+            <table id="tab1">
+                <tr>
+                  <th>Nom et Prenom</th>
+                  <th>Carrière</th>
+                  <th>Action</th>
+                </tr>
+                <tr id="row1">
+                    <td id="name-row1">Achrf Hakimi</td>
+                    <td id="carriere-row1"> né le 4 novembre 1998 à Madrid, est un footballeur international marocain évoluant au poste d'arrière droit au Paris Saint-Germain. </td>
+                    <td><button onclick="sup('1')" class="del">Sup</button>
+                    <button onclick="add()">Ajo</button></td>
+                  </tr>
+                  <tr id="row2">
+                    <td id="name-row2">Hakim Ziyech</td>
+                    <td id="carriere-row2">né le 19 mars 1993 à Dronten, est un footballeur international marocain évoluant au poste d'ailier droit ou de milieu offensif à Chelsea. </td>
+                    <td><button onclick="sup('2') " class="del">Sup</button>
+                        <button onclick="add()" id="ajo">Ajo</button></td>
+                  </tr>
+                  <tr id="row3">
+                    <td id="name-row3">Yassine Bounou</td>
+                    <td id="carriere-row3">né le 5 avril 1991 à Montréal (Canada), est un footballeur international marocain évoluant au poste de gardien de but au Séville FC en Liga</td>
+                    <td><button onclick="sup('3') " class="del">Sup</button>
+                        <button onclick="add()">Ajo</button>
+                    </td>
+                  </tr>
+              </table>
+              <div id="add1">
+                <p>Donner le nom du joueur</p>
+                <input type="text" id="name" placeholder="le nom du joueur">
+                <p>Donner son carriere</p>
+                <input type="text" id="carriere" placeholder="son carriere">
+                <button type="submit" onclick="addd()" class="add" >Ajouter</button>
+              </div>
+           </div>
+      </section>
+      <table id="tab2">
+        <tr>
+          <th>Nom et Prenom</th>
+          <th>Carrière</th>
+          <th>Action</th>
+        </tr>
+        <tr id="row1">
+            <td id="name-row1">Kevin De Bruyne</td>
+            <td id="carriere-row1">  né le 28 juin 1991 à Tronchiennes en Belgique, est un footballeur international1 belge qui évolue au poste de milieu de terrain à Manchester City.  </td>
+            <td><button onclick="sup1('1')" class="del">Sup</button>
+            <button onclick="add22()">Ajo</button></td>
+          </tr>
+          <tr id="row2">
+            <td id="name-row2">Romelu Lukaku</td>
+            <td id="carriere-row2">est un footballeur international2 belge qui évolue au poste d'attaquant à l'Inter Milan, en prêt de l'inter.  </td>
+            <td><button onclick="sup1('2') ">Sup</button>
+                <button onclick="add22()" id="ajo">Ajo</button></td>
+          </tr>
+          <tr id="row3">
+            <td id="name-row3">Thibaut Courtois</td>
+            <td id="carriere-row3">nné le 11 mai 1992 à Brée en Belgique, est un footballeur international2 belge. Il évolue au poste de gardien de but au Real Madrid,</td>
+            <td><button onclick="sup1('3') " >Sup</button>
+                <button onclick="add22()">Ajo</button>
+            </td>
+          </tr>
+      </table>
+      <div id="add2">
+        <p>Donner le nom du joueur</p>
+        <input type="text" id="name" placeholder="le nom du joueur">
+        <p>Donner son carriere</p>
+        <input type="text" id="carriere" placeholder="son carriere">
+        <button type="submit" onclick="adddd()" class="add" >Ajouter</button>
+      </div>
+      <table id="tab3">
+        <tr>
+          <th>Nom et Prenom</th>
+          <th>Carrière</th>
+          <th>Action</th>
+        </tr>
+        <tr id="row1">
+            <td id="name-row1">Frenkie de Jong</td>
+            <td id="carriere-row1"> né le 12 mai 1997 à Arkel aux Pays-Bas, est un footballeur international néerlandais. Il évolue au poste de milieu de terrain au FC Barcelone.   </td>
+            <td><button onclick="sup2('1')" class="del">Sup</button>
+            <button onclick="add222()">Ajo</button></td>
+          </tr>
+          <tr id="row2">
+            <td id="name-row2">Memphis Depay</td>
+            <td id="carriere-row2">né le 13 février 1994 à Moordrecht, est un footballeur international néerlandais qui évolue au poste d'attaquant sous le maillot du FC Barcelone.  </td>
+            <td><button onclick="sup2('2') ">Sup</button>
+                <button onclick="add222()" id="ajo">Ajo</button></td>
+          </tr>
+          <tr id="row3">
+            <td id="name-row3">Virgil van Dijk</td>
+            <td id="carriere-row3">né le 8 juillet 1991 à Bréda aux Pays-Bas, est un footballeur international néerlandais qui évolue au poste de défenseur central au Liverpool FC. </td>
+            <td><button onclick="sup2('3') " >Sup</button>
+                <button onclick="add222()">Ajo</button>
+            </td>
+          </tr>
+      </table>
+      <div id="add3">
+        <p>Donner le nom du joueur</p>
+        <input type="text" id="name" placeholder="le nom du joueur">
+        <p>Donner son carriere</p>
+        <input type="text" id="carriere" placeholder="son carriere">
+        <button type="submit" onclick="addnether()" class="add" >Ajouter</button>
+      </div>
+   </div>
+
+
+
+
+
+    <section>
+        <div class="vol5">
+            <h1>Actualités</h1>
+                <div id="mar-news">
+                    <img src="/images/news/morocco.jpg" class="img">
+                    <h3>Le Maroc bat la Belgique et met un pied en 8è</h3>
+                    <p>Pour leur deuxième sortie lors du mondial Qatar 2022, les Lions de l’Atlas ont fait l’essentiel...<br>
+                        <button onclick="shownews() "> Lire plus</button></p>
+                </div>
+                <div id="qat-news" >
+                    <img src="/images/news/qatar.jpg" class="img">
+                    <h3>Le Qatar éliminé de «sa» Coupe du monde</h3>
+                    <p>Qatar 1, Sénégal 3, et voilà l’élimination qui tendait les bras au pays hôte. Les Pays-Bas et l’Equateur...<br>
+                        <button onclick="shownews1()"> Lire plus</button></p>
+                </div>
+                <div id="spa-news">
+                    <img src="/images/news/spain.jpg" class="img">
+                    <h3>L'Espagne a battu sept fois le Costa Rica lors de sa plus grande victoire en Coupe du monde</h3>
+                    <p>L'Espagne a lancé sa campagne Qatar 2022™ en beauté mercredi...<br>
+                        <button onclick="shownews2()"> Lire plus</button></p>
+                </div>
+                <div class="but">
+                    <button class="next" onclick="next() "  ondblclick="next2"><</button>
+                    <button class="prev" onclick="prev() ">></button>
+                    
+                </div>
+        </div>
+
+        <div class="big-mar-news" id="mar">
+        <h1>Le Maroc bat la Belgique et met un pied en 8è</h1>
+        <p><img src="/images/news/morocco.jpg" class="im1">
+            Pour leur deuxième sortie lors du mondial Qatar 2022, les Lions de l’Atlas ont fait l’essentiel en battant la Belgique (2-0), ce dimanche 27 novembre au stade Al Thumama. L’équipe nationale glane ainsi 3 points précieux qui lui permettent de prendre
+            une option sur la qualification aux 8è de finale pour le groupe F. C’est un Maroc impérieux qui s’est imposé face à la Belgique, grâce aux buts de Abdelhamid Sabiri (73e) et Zakaria Aboukhlal (90+2). Le Maroc, outsider du groupe F, a mis tout
+            le monde d’accord grâce à une grosse prestation face à la Belgique. Dès la première minute, Ziyech déboule sur le côté droit, qui efface Timothy Castagne, mais son centre n’est pas assez précis. Les Belges se montrent dangereux et De Bruyne
+            se procure une frappe puissante à la 17e minute, déviée en corner par la défense marocaine. Gros pressing des Red Devils dans le camp adverse sur Ziyech et ses coéquipiers. Les Belges se rapprochent de la cage de Munir Mohamedi qui remplace
+            Yassine Bounou avec une tentative de Meunier. A son tour, Hakim Ziyech tente sa chance de loin, ça file au-dessus des cages de Thibaut Courtois. Après 30 minutes de jeu, les Belges et les Marocains perdent tour à tour le ballon au milieu de
+            terrain. A la 35e minute, Hakimi tente sa chance. Après un sprint, l’arrière-droit se retrouve dans la surface belge. Sa tentative fuit le cadre de Courtois. Les hommes de Martinez continuent de provoquer ceux de Regragui qui répondent dans
+            les dernières minutes de la première mi-temps sur un coup franc de Hakim Ziyech. Du pied gauche, il place parfaitement le ballon, et Saïss, qui se jette devant le gardien belge, provoque l’erreur. Un but refusé sur hors-jeu relançant le jeu
+            pour les deux équipes. Dès les premières minutes de la 2e mi-temps, les Lions de l’Atlas continuent de presser et s’offrent de belles occasions notamment de la part de Hakim Ziyech, sa chance de loin (50’), mais Courtois capte sans difficulté.
+            Côté Belgique, Hazard prend sa chance dans la surface mais bute sur Munir, qui détourne le ballon en corner. A la 69e minute, Ounahi tente sa chance plein axe, à 30 mètres des cages de Courtois mais c’est au-dessus. Regragui opère de nouveaux
+            changements et fait rentrer Hamdallah et Aboukhlal à la place de Boufal et En-Nesyri. C’est la délivrance pour le Maroc grâce Sabiri (73′) qui frappe le coup franc près du poteau de corner après les deux changements. L’attaquant des Lions
+            de l’Atlas trompe Thibaut Courtois, surpris. 1-0 pour le Mountakhab alors qu’il reste quinze minutes à jouer dans le temps réglementaire. La défense marocaine est intarissable lors de ces dernières minutes grâce à notamment Romain Saiss et
+            Nayef Aguerd. Les Lions de l’Atlas continuent de créer la surprise et s’offrent un deuxième but grâce à Zakaria Aboukhal (90+2′) après un joli dribble de Ziyech. Le Maroc prend logiquement la tête du groupe F et se rapproche de la qualification,
+            en espérant faire la différence face au Canada, le 1er décembre. Un bel état d’esprit et de jeu collectif de la part des Lions de l’Atlas qui font le bonheur des supporters sortis fêter la victoire dans les quatre coin du pays. Les hommes
+            de Walid Regragui ont un troisième match à disputer, décisif pour la suite des opérations, le 1er décembre devant le Canada.</p>
+    </div>
+    <div class="big-qat-news" id="qat">
+        
+        <h1>Le Qatar éliminé de «sa» Coupe du monde</h1>
+        <p><img src="/images/news/qatar.jpg"> Qatar 1, Sénégal 3, et voilà l’élimination qui tendait les bras au pays hôte. Les Pays-Bas et l’Equateur se sont séparés sur un match nul, dans la dernière rencontre de la deuxième journée du groupe A, précipitant définitivement les Qataris hors
+            de leur mondial. Plus tôt, les champions d’Afrique sénégalais n’avaient pas tremblé, même s’ils n’ont pas joué en chaussettes contre les Qataris, qui ont montré plus que la soupe servie au match d’ouverture. Avec cette nouvelle défaite, dessinée
+            dès la première période par l’entremise de Boulaye Dia avant que Famara Diedhiou et le Marseillais Bamba Dieng ne cloutent la planche, le Qatar peut bien s’imposer contre les Pays-Bas lors du dernier match de leur poule, ça ne changerait rien.</p>
+    </div>
+    <div class="big-spa-news" id="spa">
+        
+        <h1>L'Espagne a battu sept fois le Costa Rica lors de sa plus grande victoire en Coupe du monde</h1>
+        <p> <img src="/images/news/spain.jpg"> L'Espagne a lancé sa campagne Qatar 2022™ en beauté mercredi. La Roja a inscrit le plus gros marqueur contre le Costa Rica pour prendre la tête du groupe E, à égalité de points avec le Japon, vainqueur de l'Allemagne plus tôt dans la journée.
+            Les Espagnols ont pris un départ typiquement industrieux, déterminés à éviter la surprise. Ils n'ont pas eu longtemps à attendre, Dani Olmo leur donnant l'avantage après 11 minutes. Marco Asensio a porté le score à 2-0 à peine dix minutes
+            plus tard, et Ferran Torres a pratiquement scellé les points depuis le point de penalty après une demi-heure. Ferran a ajouté une seconde juste après la reprise avant de céder sa place à Alvaro Morata. Les buts de Gavi, Carlos Soler et sous
+            Morata ont complété une victoire catégorique. Ce n'était que la troisième fois que l'Espagne remportait son match d'ouverture d'une Coupe du monde lors des 14 dernières tentatives. Débutants notoirement lents, leurs deux précédentes victoires
+            en matches d'ouverture depuis Brésil 1950™ ont été une défaite 3-1 contre la Slovénie à Corée/Japon 2002™ et une défaite 4-0 contre l'Ukraine à Allemagne 2006™. Dans leurs 11 derniers matchs d'ouverture du tournoi, les hommes en rouge ont
+            fait match nul quatre et perdu sept.</p>
+    </div>
+   
+<section>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>World</span> Cup</h1>
+                <p>
+                    The FIFA World Cup is the most prestigious football competition in the world.
+                </p>
+                <div class="contact">
+                    <span><i class='bx bx-phone icon'> +992 85 36 56 34</i></br></span>
+                    <span><i class='bx bx-envelope icon'> FIFA@gmail.com</i></span>
+                </div>
+                <div class="icons">
+                    
+                        <a href=""><img src="/images/icons/twit.svg" alt=""></a> 
+                        <a href=""><img src="/images/icons/face.svg" alt=""></a>
+                        <a href=""><img src="/images/icons/insta.svg" alt=""></a>
+                        <a href=""><img src="/images/icons/you.svg" alt=""></a>
+                </div>
+             
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                </br>
+                <ul>
+                    <a href="#">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#">
+                        <li>Groupes</li>
+                    </a>
+                    <a href="#">
+                        <li>Classment</li>
+                    </a>
+                    <a href="#">
+                        <li>Matchs</li>
+                    </a>
+                    <a href="#">
+                        <li>Login</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                </br>
+                <form action="" method="post">
+                    <input type="email" name="email" class="contact-input" placeholder="Your Email Adress ...">
+                    <textarea name="message" class="msg-input" placeholder="Your Message ..."></textarea><br>
+                    <button type="submit" class="btn-sub">
+                        <i class='bx bx-envelope'></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; FIFAS.com | Designed by G.I Groupe
+        </div>
+    </div>
+</section>    
+    
+    <script src="./script.js"></script>
+    <script src="/display.js"></script>
+</body>
+</html>
